@@ -7,7 +7,7 @@ const logger = require('./utils/logger');
 async function main() {
     logger.info('Starting autocomplete name extraction...');
 
-    const strategy = 'bfs'; // Change this to best strategy
+    const strategy = 'trie'; // Change this to best strategy
     switch (strategy) {
         case 'bfs':
             await bfsStrategy();
